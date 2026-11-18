@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#241b23"/><stop offset="1" stop-color="#111217"/></linearGradient></defs>
+<rect width="1200" height="600" fill="url(#bg)"/>
+<rect x="46" y="46" width="1108" height="508" rx="24" fill="none" stroke="#564048"/>
+<text x="85" y="118" font-family="Arial" font-weight="bold" font-size="23" fill="#ff767f">N / CONTENT INTELLIGENCE</text>
+<text x="85" y="229" font-family="Arial" font-weight="bold" font-size="78" fill="#ffffff">Streaming stories.</text>
+<text x="85" y="321" font-family="Arial" font-weight="bold" font-size="78" fill="#ff4b55">A Pakistani lens.</text>
+<text x="85" y="389" font-family="Arial" font-size="24" fill="#c2c3c9">Historical Netflix production-country credits · Plotly analytics</text>
+<text x="85" y="483" font-family="Arial" font-weight="bold" font-size="54" fill="#ffffff">24</text>
+<text x="235" y="483" font-family="Arial" font-weight="bold" font-size="54" fill="#ffffff">20</text>
+<text x="385" y="483" font-family="Arial" font-weight="bold" font-size="54" fill="#ffffff">4</text>
+<text x="85" y="514" font-family="Arial" font-size="17" fill="#b9bbc1">TITLES</text>
+<text x="235" y="514" font-family="Arial" font-size="17" fill="#b9bbc1">MOVIES</text>
+<text x="385" y="514" font-family="Arial" font-size="17" fill="#b9bbc1">TV SHOWS</text>
+</svg>
