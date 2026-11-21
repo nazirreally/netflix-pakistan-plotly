@@ -35,13 +35,19 @@ Instead of another general Netflix EDA, this original project zooms into **Pakis
 
 These counts come directly from the included CSV and are checked in automated tests.
 
+## Online demo (GitHub Pages)
+
+[**Open the interactive Netflix Pakistan report**](https://nazirreally.github.io/netflix-pakistan-plotly/) — available after GitHub Pages activation and a successful **Publish Netflix Analytics Demo** workflow run. This is an **offline-capable, historical static report**, not the separate Streamlit server application.
+
+The [deployment workflow](.github/workflows/deploy-pages.yml) rebuilds the report from the checked-in dataset, validates the interactive Plotly site, uploads only the generated `docs/` contents, and checks the published HTML and bundled Plotly JavaScript over HTTPS. Enable once in **Settings → Pages → Build and deployment → Source: GitHub Actions**, then dispatch the publishing workflow or use the supplied activation script.
+
 ## Two ways to explore
 
 ### 1. Zero-setup interactive dashboard (HTML)
 
 Open [`docs/index.html`](docs/index.html) in a browser. It has **8 Plotly charts**, searchable title records and a dark, Netflix-inspired interface. The Plotly JavaScript library is bundled in the generated site, so the charts render **without an internet connection**. The HTML report is precomputed from the uploaded data.
 
-**GitHub Pages:** In the repository Settings → Pages → Deploy from branch → `main` → `/docs` → Save. GitHub will publish the static page once the repository is uploaded. The static view is interactive at the chart level; source-wide filters are available in Streamlit.
+**GitHub Pages:** Select **Source: GitHub Actions**, not “Deploy from a branch.” The [publishing workflow](.github/workflows/deploy-pages.yml) regenerates the static report and deploys its artifact on source changes. The static view is interactive at chart level; cross-filtering across the source dataset is available in the separate Streamlit app.
 
 ### 2. Filterable Streamlit research app
 
