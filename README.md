@@ -81,7 +81,7 @@ The dashboard, static report and notebook **share the same** `src/data.py` and `
 netflix-pakistan-plotly/
 ├── app.py                        # Filterable Streamlit dashboard
 ├── data/netflix_titles.csv     # Original source CSV (uncompressed)
-├── src/data.py                    # Cleaning, features, cohort + aggregates
+├── src/data.py                    # Cleaning, country credits and aggregations
 ├── src/charts.py                  # Shared Netflix-red Plotly visual grammar
 ├── notebooks/netflix_pakistan_eda.ipynb
 ├── docs/index.html                # Standalone, static Plotly dashboard
