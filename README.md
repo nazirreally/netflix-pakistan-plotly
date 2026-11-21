@@ -90,6 +90,7 @@ netflix-pakistan-plotly/
 ├── scripts/build_static.py        # Rebuild the static dashboard
 ├── reports/findings.md            # Grounded insights and limitations
 ├── tests/test_data.py             # Dataset + visualization checks
+├── tests/test_dashboard.py        # Streamlit AppTest render and filter checks
 └── .github/workflows/tests.yml    # Automated checks
 ```
 
@@ -102,7 +103,7 @@ python scripts/build_static.py
 python scripts/build_static.py --verify
 ```
 
-GitHub Actions runs tests and regenerates the static dashboard whenever source files change.
+GitHub Actions runs data/chart tests, headless Streamlit AppTest smoke checks and static-site build verification. The [21 November 2026 AppTest workflow](https://github.com/nazirreally/netflix-pakistan-plotly/actions/runs/44946412932) passed. AppTest checks application execution and filter interaction; it is not a browser screenshot or visual-regression test. A separate workflow regenerates static dashboard assets when source files change.
 
 ## Analytical definitions
 
