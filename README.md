@@ -37,9 +37,9 @@ These counts come directly from the included CSV and are checked in automated te
 
 ## Online demo (GitHub Pages)
 
-[**Open the interactive Netflix Pakistan report**](https://nazirreally.github.io/netflix-pakistan-plotly/) — available after GitHub Pages activation and a successful **Publish Netflix Analytics Demo** workflow run. This is an **offline-capable, historical static report**, not the separate Streamlit server application.
+[**Open the live interactive Netflix Pakistan report**](https://nazirreally.github.io/netflix-pakistan-plotly/) — deployed on GitHub Pages. The [successful publishing run](https://github.com/nazirreally/netflix-pakistan-plotly/actions/runs/44947706517) rebuilt and tested the report, deployed it, and verified the live HTML and bundled Plotly JavaScript over HTTPS. This is a **historical static report**, not the separate Streamlit server application.
 
-The [deployment workflow](.github/workflows/deploy-pages.yml) rebuilds the report from the checked-in dataset, validates the interactive Plotly site, uploads only the generated `docs/` contents, and checks the published HTML and bundled Plotly JavaScript over HTTPS. Enable once in **Settings → Pages → Build and deployment → Source: GitHub Actions**, then dispatch the publishing workflow or use the supplied activation script.
+The [deployment workflow](.github/workflows/deploy-pages.yml) rebuilds the report from the checked-in dataset, validates the interactive Plotly site, uploads only the generated `docs/` contents, and checks the published HTML and bundled Plotly JavaScript over HTTPS. GitHub Pages is enabled with **Source: GitHub Actions**. Future changes to the dashboard source trigger rebuilding and deployment.
 
 ## Two ways to explore
 
